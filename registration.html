@@ -1,0 +1,143 @@
+<html>
+<style>
+
+input[type=text], select {
+  width: 100%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #3f3e3e;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px;
+
+
+}
+
+
+input[type=submit] {
+  
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 30PX;
+ 
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset] {
+  
+  background-color: #3d9140;
+  color: white;
+  padding: 10px 50px;
+  margin: 8px 0;
+  
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+input[type=text]:focus {
+  background-color: rgb(164, 241, 164);
+}
+
+div {
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: 700;
+}
+.center {
+
+  margin-top: 5px;
+  
+  padding: 10px;
+  color: rgb(0, 0, 0);
+ background-color: rgb(216, 229, 218);
+
+}
+.back{
+  height: 92vh; 
+}
+.mainbox{
+    display: flex;
+    justify-content: space-around;
+}
+.subrest{
+    align-self: center;
+}
+h1{
+    margin-left: 180px;
+}
+</style>
+<body>
+  <div class="back">
+<div class="center">
+    
+    <h1>Register to proceed </h1>
+    <div class="mainbox">
+    <div class="box1">
+    <form action="/action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Address</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Address"><br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="China">China</option>
+      <option value="USA">USA</option>
+      <option value="Nepal">Nepal</option>
+      <option value="UK">UK</option>
+    </select><br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+      </div>
+      <div class="box2">
+    <label for="phone">Enter a phone number:</label>
+    <input type="text" id="phone" name="phone" placeholder="1234567890" pattern="[0-9]*{9}" required>
+   <br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required><br>
+    
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="password" required><br>
+
+   
+    <label for="country">Select item</label>
+    <select id="country" name="country">
+      <option value="India">Ashwagandha</option>
+      <option value="China">Amla</option>
+      <option value="USA">Bramhi</option>
+      <option value="Nepal">Haritika</option>
+      <option value="UK">Mangista</option>
+      <option value="UK">Neem</option>
+      <option value="UK">Satavari</option>
+
+    <br>
+    </div>
+    </div>
+    <div class="subrest" >
+    <input type="submit" value="Place Order">
+    <input type="reset" value="Reset">
+     </div>
+    
+  </form>
+</div>
+</div>
+
+</body>
+</html>

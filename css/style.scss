@@ -191,16 +191,6 @@ a:focus {
   box-shadow: none;
 }
 
-.custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
-  background-size: 17px;
-  background-repeat: no-repeat;
-  background-position-y: 7px;
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  border: none;
-}
 
 .custom_nav-container {
   form {
@@ -815,8 +805,7 @@ a:focus {
 
 // info section
 .info_section {
-  background-color: #0f1521;
-  color: $white;
+ 
 
   .info_logo {
     width: 80%;

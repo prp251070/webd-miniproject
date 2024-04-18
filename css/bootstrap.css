@@ -153,9 +153,10 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #311515;
   text-decoration: none;
   background-color: transparent;
+  font-weight: 600;
 }
 
 a:hover {
@@ -4055,6 +4056,7 @@ input[type="button"].btn-block {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: right;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -4063,6 +4065,7 @@ input[type="button"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  margin-top: 15px;
 }
 
 .nav-link:hover, .nav-link:focus {

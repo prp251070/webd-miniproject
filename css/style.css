@@ -34,6 +34,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  
 }
 
 .heading_container h2 {
@@ -57,12 +58,14 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background-image: url(..);
-  background-size: cover;
+  background-image: url();
+  background-size:contain;
   position: relative;
   background-repeat: no-repeat;
   overflow: hidden;
 }
+
+
 
 .hero_area::after {
   content: "";
@@ -71,7 +74,7 @@ body {
   right: 0;
   width: 2%;
   height: 2%;
-  background-image: url(../images/hero-side-bg.png);
+  
   background-size: cover;
 }
 
@@ -85,12 +88,15 @@ body {
 }
 
 .header_section {
-  overflow-x: hidden;
+  overflow-x:hidden;
+ 
+
+
 }
 
 .header_section .container-fluid {
-  padding-right: 25px;
-  padding-left: 25px;
+  background: rgb(255,255,255);
+  background: linear-gradient(65deg, rgba(255,255,255,1) 10%, rgba(21,238,11,1) 58%, rgba(6,178,7,1) 89%);
 }
 
 .header_section .nav_container {
@@ -122,16 +128,22 @@ body {
   margin-right: 5px;
 }
 
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
-  padding: 10px 15px;
-  color: #060606;
+.new_navbar{
+  color: #e21616;
   text-align: center;
   text-transform: uppercase;
+  display: flex;
+  flex-direction:row;
+   justify-content: space-between;
+
 }
 
-.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link, .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover .nav-link {
-  color: #24d278;
+.item1{
+  align-self: left;
 }
+
+
+
 
 a,
 a:hover,
@@ -152,7 +164,7 @@ a:focus {
 }
 
 .custom_nav-container .nav_search-btn {
-  background-image: url(../images/search-icon.png);
+  background-image: url(./images/search-icon.png);
   background-size: 17px;
   background-repeat: no-repeat;
   background-position-y: 7px;
@@ -215,7 +227,7 @@ a:focus {
 }
 
 .login_btn-container a {
-  color: #24d278;
+  color: #9d6d25;
   text-transform: uppercase;
 }
 
@@ -227,8 +239,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(65deg, rgba(255,255,255,1) 10%, rgba(21,238,11,1) 58%, rgba(6,178,7,1) 89%);
+
 }
 
 .slider_section .container {
@@ -277,7 +292,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 {
-  color: #24d278;
+  color: #0f6738;
   text-transform: uppercase;
 }
 
@@ -355,32 +370,6 @@ a:focus {
 }
 
 
-
-@-webkit-keyframes before-animation {
-  0% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 1;
-  }
-}
-
-@keyframes before-animation {
-  0% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-            transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 1;
-  }
-}
 
 .slider_section .carousel-indicators {
   margin: 0;
@@ -801,7 +790,7 @@ a:focus {
 }
 
 .client_section .client_box .client-id .name p {
-  color: #24d278;
+  color: #000000;
   margin: 0;
 }
 
@@ -828,7 +817,7 @@ a:focus {
 }
 
 .info_section {
-  background-color: #0f1521;
+  background-color: #415d38;
   color: #ffffff;
 }
 
@@ -1028,5 +1017,11 @@ a:focus {
 .menu_btn-style button .s-3 {
   -webkit-transform: rotate(-45deg) translate(7px, -10px);
           transform: rotate(-45deg) translate(7px, -10px);
+
+}
+.prp{
+  display: flex;
+   justify-content: right;
+
 }
 /*# sourceMappingURL=style.css.map */
